@@ -113,14 +113,6 @@ body::before {
     background: #898989;
 }
 
-.container__texto {
-    margin: 16px 0 16px 0;
-}
-
-.container__texto-azul {
-    color: #1875E8;
-}
-
 .container__input {
     width: 100%;
     height: 72px;
