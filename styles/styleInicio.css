@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --color-primario: #F6F6F6;
+    --color-secundario: #000000;
+    --color-terciario: #22D4FD;
+    --color-hover: #cacaca;
+
+    --fuente-krona: 'Krona One', sans-serif;
+    --fuente-montserrat: 'Montserrat', sans-serif;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    background-color: var(--color-primario);
+    color: var(--color-secundario);
+    box-sizing: border-box;
+    height: 100vh;
+    /*border: 2px solid var(--color-terciario);*/
+}
+
+.header{
+    padding: 0% 0% 0% 0%;
+    height: 30vh;
+    align-items: center;
+    display: flex;
+    background-color: #1d571d;
+}
+
+.titulo{
+    font-size: 3.5rem;
+    color: aliceblue;
+    text-align: center;
+    width: 50%;
+}
+
+.container__imagenes {
+    display: flex;
+    align-items: center;
+    width: 25%;
+}
+
+.container__imagenes2 {
+    display: flex;
+    align-items: center;
+    width: 25%;
+}
+
+.container__imagen {
+    width: auto;
+    height: 50%;
+    object-fit: contain;
+    max-width: 100%;
+}
+
+.presentacion{
+    display: flex;
+    align-items: center;
+    padding: 5% 15%;
+    justify-content: space-between;
+    gap: 20%;
+}
+
+.presentacion2{
+    display: flex;
+    align-items: center;
+    padding: 5% 15%;
+    justify-content: space-between;
+    gap: 20%;
+}
+
+.container__boton {
+    border-radius: 16px;
+    background: --color-terciario;
+    padding: 16px 24px;
+    width: 100%;
+    height: auto;
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--color-secundario);
+    border: 2px solid var(--color-secundario);
+    margin-top: 2rem;
+}
+
+.container__boton:hover{
+    background-color: var(--color-hover);
+    cursor: pointer;
+}
+
+@media (max-width: 1200px ) {
+    .header{
+        padding: 10%;   
+    }
+
+    .header__menu{
+        justify-content: center;
+    }
+
+    .presentacion{
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+
+    .presentacion__contenido{
+        width: auto;
+    }
+}
