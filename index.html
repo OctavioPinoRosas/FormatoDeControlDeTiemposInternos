@@ -1,11 +1,47 @@
 <!DOCTYPE html>
-<html lang="es-mx">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formato de control de tiempos interno</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@700&family=Inter:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="inicioDeSesion.css">
+    <title>FORMATO DE CONTROL DE TIEMPOS INTERNO</title>
 </head>
+
 <body>
-    
+    <header class="header">
+        <h1 class="titulo">
+            FORMATO DE CONTROL DE TIEMPOS INTERNO
+        </h1>
+    </header>
+
+    <div class="container">
+        <div class="container__contenido">
+            <div class="container__informaciones">
+                <div class="container__texto">
+                    <h1></h1>
+                    <p class="texto__parrafo"></p>
+                </div>
+                <input type="number" id="valorUsuario" min="1" max="10" class="container__input">
+                <div class="chute container__botones">
+                    <button onclick="verificarIntento();" class="container__boton">Iniciar Sesión</button>
+                    <button onclick="reiniciarJuego();" class="container__boton">registrarse</button>
+                </div>
+            </div>
+            <div class="container__imagenes">
+                <img src="./img/LogoGimtrac.jpeg" alt="Logo Gimtrac" class="container__imagen" />
+                <img src="./img/LogoJohnDeere.png" alt="Logo John Deere" class="container__imagen" />
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="app.js" defer></script>
 </body>
+
 </html>
