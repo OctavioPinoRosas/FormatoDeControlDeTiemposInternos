@@ -21,13 +21,56 @@ body {
     box-sizing: border-box;
 }
 
+html, body {
+    height: 100%;
+}
+
+body {
+    background-color: var(--color-primario);
+    color: var(--color-secundario);
+    box-sizing: border-box;
+    height: 100vh;
+    /*border: 2px solid var(--color-terciario);*/
+}
+
 .header{
-    padding: 2% 0% 0% 15%;;
+    padding: 0% 0% 0% 0%;
+    height: 10vh;
+    align-items: center;
+    display: flex;
+    background-color: #1d571d;
+}
+
+.titulo{
+    font-size: 2 rem;
+    color: aliceblue;
+    text-align: center;
+    width: 80%;
+}
+
+.container__imagenes {
+    display: flex;
+    align-items: center;
+    width: 10%;
+}
+
+.container__imagenes2 {
+    display: flex;
+    align-items: center;
+    width: 10%;
+}
+
+.container__imagen {
+    width: auto;
+    height: 50%;
+    object-fit: contain;
+    max-width: 100%;
 }
 
 .header__menu{
     display: flex;
     gap: 80px;
+    justify-content: center;
 }
 
 .header__menu__link{
